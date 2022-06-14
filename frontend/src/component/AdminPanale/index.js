@@ -15,62 +15,63 @@ const Admin = () => {
   return (
     <div className="main">
       <div className="analize">
-        <h1 className="dash">Dash Bord</h1>
+        <h1 className="dash">Dashboard
+</h1>
         <br/>
         <br/>
-        <h3>Analize</h3>
+        <h3 className="dash_h3">Analytics</h3>
         <br />
-        <h3>Payments</h3>
+        <h3 className="dash_h3">Payments</h3>
         <br />
-        <h3>Database</h3>
+        <h3 className="dash_h3">Databases</h3>
       </div>
       {isLoggedIn ? (
         <div className="admin_sections">
           <div className="section_link_1">
             <Link className="linkss" to={"/UserAdminPanel"}>
               User Section
-            </Link>
+          
             <img className="chart_Pic"
           src="https://i.ibb.co/xfkSCnV/1.png
 
           "
           alt="chart"
           border="0"
-        />
+        />  </Link>
           </div>{" "}
           <div className="section_link_2">
             <Link className="linkss" to={"/ProductAdminPanel"}>
               Product Section
-            </Link>
             <img className="chart_Pic"
           src="https://i.ibb.co/QnkZ25K/4.png
           "
           alt="chart"
           border="0"
-        />
+          />
+          </Link>
           </div>{" "}
           <div className="section_link_3">
             <Link className="linkss" to={"/"}>
               Category Section
-            </Link>
             <img className="chart_Pic"
           src="https://i.ibb.co/DkSHXVD/2.png
           "
           alt="chart"
           border="0"
-        />
+          />
+          </Link>
           </div>
           <div className="section_link_4">
             {" "}
             <Link className="linkss" to={"/"}>
               Foods type Section
-            </Link>
             <img className="chart_Pic"
           src="https://i.ibb.co/b28fCdR/3.png
           "
           alt="chart"
           border="0"
-        />
+          />
+          </Link>
           </div>
         </div>
       ) : (
